@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:weightSum="100"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical"
+	android:gravity="center"
+	>
+<include
+   layout="@layout/toolbar"
+	android:id="@+id/toolbar"
+	android:layout_width="match_parent"
+	android:layout_height="0dp"
+	android:layout_weight="10"
+	/>
+<FrameLayout
+	android:id="@+id/container"
+	android:layout_width="match_parent"
+	android:layout_height="0dp"
+	android:layout_weight="75"
+	/>
+<LinearLayout
+	
+	android:background="#ececec"
+	android:layout_height="0dp"
+	android:layout_weight="10"
+	android:layout_width="match_parent"
+	android:orientation="horizontal"
+>
+	<Button
+		android:id="@+id/btn_home"
+		android:background="@drawable/ic_launcher"
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_weight="25"
+		/>
+	<Button
+		android:id="@+id/btn_new_post"
+		android:background="@drawable/ic_launcher"
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_weight="25"
+	/>
+	<Button
+		android:id="@+id/btn_profile"
+		android:background="@drawable/ic_launcher"
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_weight="25"
+	/>
+	<Button
+		android:id="@+id/btn_search"
+		android:background="@drawable/ic_launcher"
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_weight="25"
+	/>
+</LinearLayout>
+</LinearLayout>

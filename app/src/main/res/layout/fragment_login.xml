@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<EditText
+			android:id="@+id/username"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="نام کاربری"
+			/>
+	</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	>
+		<EditText
+			android:id="@+id/password"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="رمز عبور"
+		/>
+	</android.support.design.widget.TextInputLayout>
+	<Button
+		android:layout_marginTop="20dp"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/btn_login"
+		android:text="ورود"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:background="#00acfe"
+		android:textSize="18dp"
+		android:textColor="#fff"
+		/>
+	<TextView
+		android:layout_marginTop="20dp"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/lbl_signup"
+		android:text="ثبت نام نکرده ام؟"
+		android:textStyle="bold"
+		/>
+	<TextView
+		android:layout_marginTop="20dp"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/lbl_forget_passeord"
+		android:text="فراموشی رمز عبور"
+		android:textStyle="bold"
+	/>
+	
+    
+</LinearLayout>
