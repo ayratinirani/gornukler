@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity
 		
 		//framelayout
 		frameLayout=(FrameLayout)findViewById(R.id.container);
-		ft.add(R.id.container,lfr);
+		ft.replace(R.id.container,lfr);
 		ft.commit();
 		//setbuttombar
 		setButtombar();
@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity
 
 	private void setButtombar(){
 		home=(Button) findViewById(R.id.btn_home);
-
 		search=(Button) findViewById(R.id.btn_search);
 		newPost=(Button) findViewById(R.id.btn_new_post);
 		profile=(Button) findViewById(R.id.btn_profile);
@@ -53,7 +52,9 @@ public class MainActivity extends AppCompatActivity
 				@Override
 				public void onClick(View p1)
 				{
-					// TODO: Implement this method
+					HomeFragment homefagment=new HomeFragment();
+					ft=fm.beginTransaction();
+					ft.replace(R.id.container,homefagment).commit();
 				}
 
 
@@ -65,7 +66,10 @@ public class MainActivity extends AppCompatActivity
 				@Override
 				public void onClick(View p1)
 				{
-					// TODO: Implement this method
+				SearchFragment searchfagment=new SearchFragment();
+					ft=fm.beginTransaction();
+					ft.replace(R.id.container,searchfagment).commit();
+					
 				}
 
 
@@ -77,7 +81,10 @@ public class MainActivity extends AppCompatActivity
 				@Override
 				public void onClick(View p1)
 				{
-					// TODO: Implement this method
+					ProfileFragment profilefagment=new ProfileFragment();
+					ft=fm.beginTransaction();
+					ft.replace(R.id.container,profilefagment).commit();
+					
 				}
 
 
@@ -89,7 +96,10 @@ public class MainActivity extends AppCompatActivity
 				@Override
 				public void onClick(View p1)
 				{
-					// TODO: Implement this method
+					NewPostFragment newPostfagment=new NewPostFragment();
+					ft=fm.beginTransaction();
+					ft.replace(R.id.container,newPostfagment).commit();
+					
 				}
 
 

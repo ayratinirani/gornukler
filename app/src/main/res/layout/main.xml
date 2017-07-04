@@ -28,31 +28,38 @@
 	android:orientation="horizontal"
 >
 	<Button
+		android:textColor="#f11"
+		android:padding="8dp"
 		android:id="@+id/btn_home"
-		android:background="@drawable/ic_launcher"
-		android:layout_height="match_parent"
-		android:layout_width="0dp"
+		android:background="@mipmap/ic_home"
+		android:layout_height="25dp"
+		android:layout_width="25dp"
 		android:layout_weight="25"
 		/>
 	<Button
+		android:colorPressedHighlight="#fff"
+		android:padding="8dp"
 		android:id="@+id/btn_new_post"
-		android:background="@drawable/ic_launcher"
-		android:layout_height="match_parent"
-		android:layout_width="0dp"
+		android:background="@mipmap/ic_new"
+		android:layout_height="25dp"
+		android:layout_width="25dp"
 		android:layout_weight="25"
 	/>
 	<Button
+		android:padding="8dp"
 		android:id="@+id/btn_profile"
-		android:background="@drawable/ic_launcher"
-		android:layout_height="match_parent"
-		android:layout_width="0dp"
+		android:colorForeground="#56fd33"
+		android:background="@mipmap/ic_person"
+		android:layout_height="25dp"
+		android:layout_width="25dp"
 		android:layout_weight="25"
 	/>
 	<Button
+		android:padding="8dp"
 		android:id="@+id/btn_search"
-		android:background="@drawable/ic_launcher"
-		android:layout_height="match_parent"
-		android:layout_width="0dp"
+		android:background="@mipmap/ic_location"
+		android:layout_height="25dp"
+		android:layout_width="25dp"
 		android:layout_weight="25"
 	/>
 </LinearLayout>
